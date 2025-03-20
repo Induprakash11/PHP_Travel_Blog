@@ -1,7 +1,9 @@
-<?php include "_server/load.php" ?>
+<?php 
+// Include necessary files
+include "_server/load.php";
+include "load/blog.php";
 
-<?php
-// Check if the user is logged in
+// Start session and check if the user is logged in
 session_start();
 if (!isset($_SESSION['id'])) {
     header("Location: login.php");
@@ -12,18 +14,17 @@ if (!isset($_SESSION['id'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Head Content -->
+    <!-- Load head content -->
     <?= load("_head") ?>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Load navbar -->
     <?= load("_navbar") ?>
 
-    <!-- Blog Content -->
+    <!-- Load blog content -->
     <?= load("_blog") ?>
 
-    <!-- Footer -->
+    <!-- Load footer -->
     <?= load("_footer") ?>
-
 </body>
 </html>
