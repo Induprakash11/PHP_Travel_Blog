@@ -3,7 +3,7 @@ include "load/blog_details.php";
 // Check if the user is logged in
 session_start();
 if (!isset($_SESSION['id'])) {
-    header("Location: login.php");
+    header("Location: login");
     exit();
 }
 ?>

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
-            <div class="card my-5 shadow-lg">
+            <div class="card my-5 shadow">
                 <div class="card-header text-center">
                     <h2>Register</h2>
                 </div>
@@ -38,6 +38,9 @@
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                    <div class="mt-3">
+                        <p>Already have an account ?  <a href="login">Login</a></p>
                     </div>
                 </form>
             </div>

@@ -5,7 +5,7 @@ require 'db.php';
 $errors = [];
 
 if (isset($_SESSION['id'])) {
-    header("Location: home.php");
+    header("Location: home");
     exit();
 }
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['id'] = $id;
                 $_SESSION['name'] = $name;
                 if (isset($_SESSION['id'])){
-                header("Location: home.php");
+                header("Location: home");
                 exit();
                 }
             } else {

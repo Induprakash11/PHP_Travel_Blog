@@ -1,0 +1,18 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /Travel%20Blog/
+
+# Ignore requests for static files
+RewriteCond %{REQUEST_URI} ^/assets/ [NC]
+RewriteRule .* - [L]
+
+# Blog details rewrite rule
+RewriteRule ^blog-details/([^/]+)/?$ blog-details.php?category_name=$1 [L,QSA,B]
+
+# General rule for extensionless PHP files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+# Force HTTP instead of HTTPS
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]

@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($sql->execute()) {
             echo "Registration successful! You can now log in.";
-            header("Location: login.php");
+            header("Location: login");
             exit();
         } else {
             $errors[] = "Error: " . $sql->error;

@@ -20,7 +20,7 @@
                             <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </div>
                         <div class="text-center mt-3">
-                            <p>Create an account here <a href="register.php">Register</a></p>
+                            <p>Create an account here <a href="register">Register</a></p>
                         </div>
                     </form>
                 </div>

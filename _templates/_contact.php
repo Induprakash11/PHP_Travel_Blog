@@ -1,7 +1,7 @@
 <section id="contact" class="container my-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <h2 class="text-center mb-4">Contact Us</h2>
+            <h2 class="text-center mb-4">Enquire Me</h2>
             <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>

@@ -19,7 +19,7 @@
                             <!-- Display truncated category content -->
                             <p class="card-text"><?= htmlspecialchars(mb_strimwidth($row['category_content'], 0, 43, "...")) ?></p>
                             <!-- Link to category page -->
-                            <a href="blog_details.php?category_name=<?= urlencode($row['category_name']) ?>" 
+                            <a href="blog-details/<?= $row['category_name'] ?>" 
                                class="btn btn-primary">Read More</a>
                         </div>
                     </div>

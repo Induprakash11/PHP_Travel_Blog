@@ -11,11 +11,11 @@
     <!-- Redirect JS -->
     <script>
         function checkLoginStatus() {
-            fetch("load/session_check.php")
+            fetch("load/session-check.php")
                 .then(response => response.text())
                 .then(data => {
                     if (data === "logged_in") {
-                        window.location.href = "home.php"; // Redirect to home.php
+                        window.location.href = "home"; // Redirect to home.php
                     }
                 });
         }
