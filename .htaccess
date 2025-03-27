@@ -15,4 +15,6 @@ RewriteRule ^([^.]+)$ $1.php [NC,L]
 
 # Force HTTP instead of HTTPS
 RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=302,L]
+
+RewriteRule ^(.*)$ http://example.com/ [R=302,L]

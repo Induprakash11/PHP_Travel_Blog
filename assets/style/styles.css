@@ -107,3 +107,30 @@ form button{
     background-color: #007bff;
     color: #fff;
 }
+
+.blog-content p:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.category-image {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    width: 800px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.category-image:hover {
+    transform: scale(1.03);
+    transition: transform 0.4s ease;
+}
+
+.blog-content p {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
